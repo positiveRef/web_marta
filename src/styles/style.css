@@ -5,6 +5,7 @@
     --green-olive-color-light: #a6bfa0;
     --orange-light-color: #F5ECE1;
     --beige-color: #f5f0ec;
+    --black-light-color: rgb(63, 63, 63);
     --header-padding: 10px;
     --header-img-margin-right: 20px;
     --nav-ul-margin-right: 15px;
@@ -79,7 +80,7 @@ nav a:hover {
 
 .start-and-services{
     background-color: var(--green-olive-color-light);
-    color: var(--beige-color);
+    color: var(--black-light-color);
     padding: 10px;
     display: flex;
     justify-content: space-around;
