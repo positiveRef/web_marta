@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+:root {
+    --green-olive-color: #6d8b74;
+    --green-olive-color-light: #a6bfa0;
+    --orange-light-color: #F5ECE1;
+    --beige-color: #f5f0ec;
+    --header-padding: 10px;
+    --header-img-margin-right: 20px;
+    --nav-ul-margin-right: 15px;
+}  
+
+body {
+    font-family: "Poiret One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--beige-color);
+    padding: 10px;
+}
+header img {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: -20px;
+}
+
+header div{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    min-width: fit-content;
+    padding: 20px;
+    background-color: var(--orange-light-color);
+    border: 1px solid var(--orange-light-color);
+    border-radius: 20% / 50%;
+    transition: transform .25s;
+}
+
+nav ul li:first-of-type {
+    margin-right: 15px;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--green-olive-color);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    transform: scale(1.5);
+}
+
+.start-and-services{
+    background-color: var(--green-olive-color-light);
+    color: var(--beige-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#inicio h2{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#inicio div {
+    margin: 10px;
+}
+
+#inicio img {
+    border-radius: 50%;
+}
+
+#sobre{
+    background-color: var(--beige-color);
+    color: var(--green-olive-color);
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+#sobre div {
+    width: 50%;
+}
+
+#sobre #sobre-imagen{
+    background-image: url(../resources/about.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#sobre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sobre #sobre-texto {
+    margin-left: 100px;
+    padding-right: 20px;
+}
+
+#sobre #sobre-imagen{
+    width: 50%;
+    height: 300px; /* O el valor que desees */
+    background-image: url('../resources/about.jpg');
+    background-size: cover; /* Hace que la imagen cubra el div */
+    background-position: center; /* Centra la imagen dentro del div */
+  }
