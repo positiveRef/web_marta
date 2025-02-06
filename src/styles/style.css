@@ -11,6 +11,28 @@
     --nav-ul-margin-right: 15px;
 }  
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--beige-color);
+    padding: 10px;
+    /*position: sticky;
+    top: 0;
+    overflow: hidden;*/
+
+    img {
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: -20px;
+    }
+
+    div{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 body {
     font-family: "Poiret One", serif;
     font-weight: 400;
@@ -19,121 +41,105 @@ body {
     padding: 0;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--beige-color);
-    padding: 10px;
-}
-header img {
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: -20px;
-}
-
-header div{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    min-width: fit-content;
-    padding: 20px;
-    background-color: var(--orange-light-color);
-    border: 1px solid var(--orange-light-color);
-    border-radius: 20% / 50%;
-    transition: transform .25s;
-}
-
-nav ul li:first-of-type {
-    margin-right: 15px;
-}
-
-nav ul li:hover {
-    transform: scale(1.1);
-}
-
 h1 {
     margin: 0;
 }
 
 nav {
+    min-width: max-content;
     margin-top: 10px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            min-width: fit-content;
+            padding: 0; /* Eliminar padding del li */
+            background-color: var(--orange-light-color);
+            border: 1px solid var(--orange-light-color);
+            border-radius: 30px;
+            transition: transform .25s;
+            overflow: hidden;
+
+            a {
+                display: block; /* Hacer que el a se comporte como un bloque */
+                width: 100%;
+                height: 100%;
+                padding: 20px; /* Mover el padding al a */
+                color: var(--green-olive-color);
+                text-decoration: none;
+                transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transiciones suaves */
+            }
+        
+            a:hover {
+                color: var(--beige-color);
+                background-color: var(--green-olive-color);
+                text-decoration: none; /* Mantener sin subrayado */
+            }
+        }
+
+        li:hover {
+            transform: scale(1.1);
+        }
+
+        li:first-of-type {
+            margin-right: 40px;
+        }
+    }
 }
 
-nav a {
-    color: var(--green-olive-color);
-    text-decoration: none;
-    margin: 0 15px;
+#about{
+
+    background-color: var(--green-olive-color-light);
+    color: var(--beige-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    div {
+        margin: 10px;
+    }
+
+    img {
+        border-radius: 50%;
+    }
 }
 
-nav a:hover {
-    transform: scale(1.5);
-}
-
-.start-and-services{
+/*.start-and-services{
     background-color: var(--green-olive-color-light);
     color: var(--black-light-color);
     padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+}*/
 
-#inicio h2{
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
-#inicio div {
-    margin: 10px;
-}
-
-#inicio img {
-    border-radius: 50%;
-}
-
-#sobre{
+#services{
     background-color: var(--beige-color);
     color: var(--green-olive-color);
     display: flex;
     justify-content:left;
     align-items: center;
-}
 
-#sobre div {
-    width: 50%;
-}
+    #services-image {
+        width: 50%;
+        height: 300px; 
+        background-image: url('../resources/about.jpg');
+        background-size: cover; 
+        background-position: center; 
+    }
 
-#sobre #sobre-imagen{
-    background-image: url(../resources/about.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    #services-text {
+        margin-left: 100px;
+        padding-right: 20px;
+    }
 }
-
-#sobre img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#sobre #sobre-texto {
-    margin-left: 100px;
-    padding-right: 20px;
-}
-
-#sobre #sobre-imagen{
-    width: 50%;
-    height: 300px; /* O el valor que desees */
-    background-image: url('../resources/about.jpg');
-    background-size: cover; /* Hace que la imagen cubra el div */
-    background-position: center; /* Centra la imagen dentro del div */
-  }
