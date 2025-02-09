@@ -45,6 +45,18 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
 nav {
     min-width: max-content;
     margin-top: 10px;
@@ -101,9 +113,9 @@ nav {
     justify-content: space-around;
     align-items: center;
 
-    h2 {
-        font-size: 2.5em;
-        font-weight: bold;
+    p{
+        text-align: justify;
+        text-justify: inter-word;
     }
 
     div {
@@ -123,7 +135,7 @@ nav {
 
     #services-image {
         width: 50%;
-        height: 300px; 
+        height: 400px; 
         background-image: url('../resources/about.jpg');
         background-size: cover; 
         background-position: center; 
@@ -131,24 +143,46 @@ nav {
 
     #services-text {
         width: 50%;
-        margin-left: 100px;
-        padding-right: 20px;
+        padding: 1em 2em;
+
+        p{
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    }
+}
+
+#rates{
+    padding: .5em;
+    background-color: var(--green-olive-color-light);
+    color: var(--beige-color);
+
+    div {
+        margin: 10px;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    #rates-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    p {
+        text-align: center;
     }
 }
 
 #contact{
-    background-color: var(--green-olive-color-light);
-    color: var(--beige-color);
+    background-color: var(--beige-color);
+    color: var(--green-olive-color);
     display: flex;
     align-items: center;
 
     p{
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 2.5em;
-        font-weight: bold;
         text-align: center;
     }
 
