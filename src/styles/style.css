@@ -306,5 +306,34 @@ h3 {
                 order: 5;
             }
         }
-    } 
+    }
+
+    #about {
+        flex-direction: column;
+
+        div{
+            text-align: center;
+        }
+
+        img {
+            width: 50%;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+    #services {
+        flex-direction: column;
+
+        #services-image {
+            display: none;
+            visibility: hidden;
+        }
+
+        #services-text {
+            width: 100%;
+        }
+    }
 }
