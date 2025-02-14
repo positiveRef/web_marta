@@ -16,7 +16,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--beige-color);
-    padding: 10px;
+    padding: 20px;
     /*position: sticky;
     top: 0;
     overflow: hidden;*/
@@ -138,10 +138,11 @@ h3 {
 
     #services-text {
         width: 50%;
-        padding: 1em 2em;
+        padding: 10px;
 
         p {
             text-align: center;
+            padding: 10px;
         }
     }
 }
@@ -197,7 +198,6 @@ h3 {
     }
 
     form {
-        margin: 0 30px;
         padding: 1em;
 
         button {
@@ -250,7 +250,7 @@ h3 {
         outline: none !important;
         border: 1px solid var(--green-olive-color);
         box-shadow: 0 0 10px var(--green-olive-color);
-        transition: box-shadow 0.3s, border 0.3s, transform 0.3s;
+        transition: box-shadow 0.8s, border 0.2s, transform 0.2s;
     }
 
     textarea {
@@ -318,10 +318,6 @@ h3 {
         img {
             width: 50%;
         }
-
-        p {
-            width: 100%;
-        }
     }
 
     #services {
@@ -331,9 +327,25 @@ h3 {
             display: none;
             visibility: hidden;
         }
+    }
 
-        #services-text {
-            width: 100%;
+    #contact {
+
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        label{
+            margin: .5em 0;
+            text-align: center;
+        }
+
+        button {
+            margin: 1em 0;
         }
     }
 }
