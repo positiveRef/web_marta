@@ -126,23 +126,25 @@ h3 {
     background-color: var(--beige-color);
     color: var(--green-olive-color);
     display: flex;
+    justify-content: center;
     align-items: center;
 
-    #services-image {
-        width: 50%;
-        height: 400px;
-        background-image: url('../resources/about.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-
     #services-text {
-        width: 50%;
         padding: 10px;
 
         p {
             text-align: center;
             padding: 10px;
+        }
+
+        #services-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+
+            div{
+                width: 23.5%;
+            }
         }
     }
 }
@@ -161,8 +163,12 @@ h3 {
     }
 
     #rates-list {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
         display: flex;
         justify-content: space-evenly;
+        align-items: flex-start;
         flex-wrap: wrap;
     }
 
