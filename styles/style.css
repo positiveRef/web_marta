@@ -141,6 +141,10 @@ h3 {
             display: flex;
             justify-content: space-between;
             align-items: top;
+
+            div{
+                width: 23.5%;
+            }
         }
     }
 }
@@ -270,7 +274,7 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media (max-width: 700px) {
 
     header{
 
@@ -321,9 +325,23 @@ h3 {
             width: 50%;
         }
     }
+    
+    #services {
 
-    #services-list {
-        flex-direction: column;
+        #services-text {
+
+            #services-list {
+                flex-direction: column;
+
+                div{
+                    width: 100%;
+
+                    p{
+                        padding: 0 2em;
+                    }
+                }
+            }
+        }
     }
 
     #contact {
