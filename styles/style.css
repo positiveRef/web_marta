@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
     --green-olive-color: #6d8b74;
@@ -38,7 +39,7 @@ header {
 
         a {
             white-space: nowrap;
-            font-weight: bold;
+            font-weight: 400;
             display: block;
             padding: 1.25em;
 
@@ -69,8 +70,8 @@ header {
 }
 
 body {
-    font-family: "Poiret One", serif;
-    font-weight: 400;
+    font-family: "Montserrat", serif;
+    font-weight: 300;
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -81,14 +82,14 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5em;
-    font-weight: bold;
+    font-size: 2em;
+    font-weight: 400;
     text-align: center;
 }
 
 h3 {
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -107,10 +108,14 @@ h3 {
     justify-content: space-around;
     align-items: center;
 
-    p {
-        text-align: justify;
-        text-justify: inter-word;
+    h2 {
+        text-align: left;
         padding: 10px;
+    }
+
+    p {
+        padding: 10px;
+        font-size: 1.2em;
     }
 
     div {
@@ -130,10 +135,11 @@ h3 {
     align-items: center;
 
     #services-text {
-        padding: 10px;
+        padding: .5em 3em;
 
         p {
             text-align: center;
+            font-size: 1.05em;
             padding: 10px;
         }
 
@@ -174,11 +180,13 @@ h3 {
 
     p {
         text-align: center;
+        font-size: 1.05em;
     }
 
     h3 {
         margin-block-start: .5em;
         margin-block-end: .5em;
+        font-size: 2em;
     }
 }
 
@@ -237,7 +245,6 @@ h3 {
         display: inline-block;
         width: 75px;
         text-align: left;
-        font-weight: bold;
     }
 
     input,
@@ -271,6 +278,7 @@ h3 {
 
     button {
         margin-left: 5.5em;
+        font-size: 1.05em;
     }
 }
 
@@ -316,6 +324,11 @@ h3 {
 
     #about {
         flex-direction: column;
+
+        h2 {
+            text-align: center;
+            padding: 0;
+        }
 
         div{
             text-align: center;
