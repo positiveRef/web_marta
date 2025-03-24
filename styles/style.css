@@ -52,13 +52,6 @@ header {
             transition: background-color 0.3s, color 0.3s, transform 0.3s;
         }
 
-        a:hover {
-            color: var(--beige-color);
-            background-color: var(--green-olive-color);
-            text-decoration: none;
-            transform: scale(1.1);
-        }
-
         /*div:first-of-type {
             margin-right: 2.5%;
         }
@@ -384,3 +377,13 @@ h3 {
         }
     }
 }
+
+/*Hover effect for desktop, but not for touch devices*/
+@media (hover: hover) and (pointer: fine) {
+    a:hover {
+        color: var(--beige-color);
+        background-color: var(--green-olive-color);
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+  }
