@@ -298,6 +298,13 @@ h3 {
                 a {
                     padding: 10px;
                 }
+
+                a:active {
+                    color: var(--green-olive-color);
+                    background-color: var(--orange-light-color);
+                    text-decoration: none;
+                    transform: scale(1);
+                }
             }
 
             div:nth-child(3) {
