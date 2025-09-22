@@ -194,6 +194,20 @@ h3 {
 
     p {
         text-align: center;
+        a {
+            white-space: nowrap;
+            font-weight: 400;
+            display: block;
+            padding: 1.25em;
+
+            border-radius: 30px;
+
+            color: var(--green-olive-color);
+            background-color: var(--orange-light-color);
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s, transform 0.3s;
+        }
     }
 
     div {
