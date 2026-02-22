@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 
 
 :root {
     --green-olive-color: #6d8b74;
     --green-olive-color-light: #a6bfa0;
     --orange-light-color: #F5ECE1;
-    --beige-color: #f5f0ec;
+    --beige-color: #f9ecd9;
     --black-light-color: rgb(63, 63, 63);
     --header-padding: 10px;
     --header-img-margin-right: 20px;
@@ -40,13 +40,14 @@ header {
         a {
             white-space: nowrap;
             font-weight: 400;
+            font-size: larger;
             display: block;
             padding: 1.25em;
 
             border-radius: 30px;
 
             color: var(--green-olive-color);
-            background-color: var(--orange-light-color);
+            background-color: var(--beige-color);
             text-decoration: none;
             text-align: center;
             transition: background-color 0.3s, color 0.3s, transform 0.3s;
@@ -63,7 +64,7 @@ header {
 }
 
 body {
-    font-family: "Montserrat", serif;
+    font-family: "Cormorant Garamond", serif;
     font-weight: 300;
     font-style: normal;
     margin: 0;
@@ -203,7 +204,7 @@ h3 {
             border-radius: 30px;
 
             color: var(--green-olive-color);
-            background-color: var(--orange-light-color);
+            background-color: var(--beige-color);
             text-decoration: none;
             text-align: center;
             transition: background-color 0.3s, color 0.3s, transform 0.3s;
