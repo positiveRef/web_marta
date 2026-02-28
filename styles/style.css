@@ -93,6 +93,42 @@ h3 {
     background-position: center;
 }
 
+#header2 {
+    background-color: var(--beige-color);
+    color: var(--green-olive-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em 3em;
+    flex-direction: column;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    img{
+        width: 50%;
+    }
+
+    p {
+        text-align: center;
+        font-size: 2em;
+        padding: 10px;
+        object-position: center;
+    }
+}
+
+#online-therapy{
+    background-image: url('../resources/underline.png');
+    background-size: 30em;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:20%;
+}
+
 #about {
 
     background-color: var(--green-olive-color-light);
