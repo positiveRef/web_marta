@@ -7,78 +7,79 @@
     <title>Marta Quetglas Psicología</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="resources/logo.png">
+    <link rel="stylesheet" href="styles/animations.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div><a href="#about">SOBRE MÍ</a></div>
-            <div><a href="#services">SERVICIOS</a></div>
-            <div><img src="resources/logo-with-name.png" alt="Logo" width="150"></div>
-            <div><a href="#rates">TARIFAS</a></div>
-            <div><a href="#contact">CONTACTO</a></div>
+            <div class="animate-header" style="--delay: 0s"><a href="#about">SOBRE MÍ</a></div>
+            <div class="animate-header" style="--delay: 0.1s"><a href="#services">SERVICIOS</a></div>
+            <div class="animate-header" style="--delay: 0.2s"><img src="resources/logo-with-name.png" alt="Logo" width="150"></div>
+            <div class="animate-header" style="--delay: 0.3s"><a href="#rates">TARIFAS</a></div>
+            <div class="animate-header" style="--delay: 0.4s"><a href="#contact">CONTACTO</a></div>
         </nav>
     </header>
     <main>
         <section id="header2">
-            <div>
+            <div class="hero-flower">
                 <img src="resources/flor.png" alt="Flor decorativa">
             </div>
-            <div>
+            <div class="hero-quote">
                 <p>"Cuando sientas que es el momento estaré aquí para acompañarte"</p>
             </div>
-            <div id="online-therapy">
+            <div id="online-therapy" class="hero-tag">
                 <p>Terapia online</p>
             </div>
         </section>
         <section id="about">
-            <div>
+            <div data-animate="fade-left">
                 <h2>Marta Quetglas Celaya</h2>
                 <p>Número de colegiado: M-42439</p>
-                <p>Mi nombre es Marta, soy psicóloga sanitaria especializada en trauma, apego y EMDR.<br><br> 
-                    Trabajo desde un enfoque integrador, combinando distintos modelos terapéuticos para adaptarme 
-                    a la historia y necesidades de cada persona, acompañándola para comprender sus experiencias, 
+                <p>Mi nombre es Marta, soy psicóloga sanitaria especializada en trauma, apego y EMDR.<br><br>
+                    Trabajo desde un enfoque integrador, combinando distintos modelos terapéuticos para adaptarme
+                    a la historia y necesidades de cada persona, acompañándola para comprender sus experiencias,
                     gestionar sus emociones y avanzar hacia su bienestar.
                 </p>
             </div>
-            <div>           
+            <div data-animate="fade-right">
                 <img src="resources/persona.png" alt="Psicóloga" width="300">
             </div>
         </section>
         <section id="services" class="beige-background">
             <div id="services-text">
-                <h2>Servicios</h2>
+                <h2 data-animate="fade-up">Servicios</h2>
                 <div id="services-list">
-                    <div>
+                    <div data-animate="fade-up" style="--delay: 0.1s">
                         <h3>Terapia online para adultos</h3>
                     </div>
-                    <div>
+                    <div data-animate="fade-up" style="--delay: 0.25s">
                         <h3>Terapia online de pareja</h3>
                     </div>
-                    <div>
+                    <div data-animate="fade-up" style="--delay: 0.4s">
                         <h3>Grupo de supervisión para psicólogos</h3>
                     </div>
                 </div>
             </div>
         </section>
         <section id="rates">
-            <div>
+            <div data-animate="fade-up">
                 <h2>Tarifas</h2>
             </div>
             <div id="rates-list">
-                <div>
+                <div data-animate="fade-up" style="--delay: 0.2s">
                     <h3>60€</h3>
                     <p>Consulta de 50 minutos</p>
                 </div>
             </div>
         </section>
         <section id="contact" class="beige-background">
-            <div id="contact-title">
+            <div id="contact-title" data-animate="fade-left">
                 <h2>Contacto</h2>
                 <p>Teléfono: <a href="tel:+34614440368">614 44 03 68</a></p>
                 <p>Instagram: <a href="https://www.instagram.com/martaqcpsico/" target="_blank">@martaqcpsico</a></p>
             </div>
-            <div id="form">
+            <div id="form" data-animate="fade-right">
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="4e29cec6-a9c1-456c-b2e9-96586396fe9c">
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
@@ -104,6 +105,7 @@
             </div>
         </section>
     </main>
+    <script src="scripts/animations.js"></script>
 </body>
 
 </html>

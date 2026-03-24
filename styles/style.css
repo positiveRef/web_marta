@@ -176,7 +176,7 @@ h3 {
         #services-list {
             display: flex;
             justify-content: space-between;
-            align-items: top;
+            align-items: center;
 
             div{
                 width: 23.5%;
