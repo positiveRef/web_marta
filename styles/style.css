@@ -63,6 +63,10 @@ header {
     }
 }
 
+html {
+    background-color: var(--beige-color);
+}
+
 body {
     font-family: "Cormorant Garamond", serif;
     font-weight: 300;
